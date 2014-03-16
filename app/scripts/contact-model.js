@@ -1,5 +1,6 @@
+// constructor
 var Contact = Backbone.Model.extend({
-	idAttribute: "_.id",
+	idAttribute: "_.id",   //does this need a dot?
 
 	defaults:{
 		name: 'sparky',

@@ -15,6 +15,8 @@
 
         <!-- endbower -->
         <!-- endbuild -->
+         <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
@@ -29,38 +31,57 @@
 
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
                 <h3 class="text-muted">newapp cool</h3>
             </div>
 
             <div class="jumbotron">
-                <button class="btn btn-primary launch-btn-js" data-toggle="modal" data-target="#myModal">Click</button>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
+                <div class="row">
+                    <button class="btn btn-primary launch-btn-js" data-toggle="modal" data-target="#myModal">Click</button>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title" id="myModalLabel">fun with modals</h4>
                       </div>
                       <div class="modal-body">
-                        <input type="text" class="name name-js" placeholder="name">
-                        <input type="text" class="bio bio-js" placeholder="bio">
-                        <input type="text" class="phone phone-js" placeholder="phone">
-                        <input type="text" class="avatar avatar-js" placeholder="add img">
-                        
+                        <form class="form-horizontal" role="form">
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control name name-js" placeholder="Name">
+                            </div>
+                          </div>
+                          <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                              <label for="inputEmail3" class="col-sm-2 control-label">Bio</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control bio bio-js" placeholder="Bio">
+                              </div>
+                            </div>
+                            <form class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label">Phone</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control phone phone-js" placeholder="Phone Number">
+                                </div>
+                              </div>
+                              <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                  <label for="addImage" class="col-sm-2 control-label">Image</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control avatar avatar-js" id="addImage" placeholder="add image url here">
+                                  </div>
+                                </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary save-btn-js">Save changes</button>
-                      </div>
+                        <button type="button" data-dismiss="modal" class="btn btn-primary save-btn-js">Save changes</button>
+                        </div>
+                        </div>
+                     </div>
                     </div>
-                  </div>
                 </div>
-                
             </div>
 
             <div class="row marketing">
@@ -70,7 +91,7 @@
             </div>
 
             <div class="footer">
-                <p>♥ from the Yeoman team</p>
+                <p>♥ from kcampen</p>
             </div>
 
         </div>
